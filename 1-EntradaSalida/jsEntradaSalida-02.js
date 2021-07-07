@@ -17,7 +17,6 @@ function mostrar()
 
 	
 	nombre = prompt("Ingrese su nombre:");
-	alert("Tu nombre es " + nombre)
+	alert("Tu nombre es " + nombre);
 
 }
-
