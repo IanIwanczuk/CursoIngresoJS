@@ -14,7 +14,8 @@ function mostrarAumento()
 		importe = parseFloat(document.getElementById("txtIdImporte").value);
 	
 		// Calcular el aumento.
-		descuento = (25 * importe) / 100;
+		// Otra opción:    descuento = importe * .25
+		descuento = 25 * importe / 100;
 
 		// Calcular el sueldo total.
 		resultado = importe - descuento;
