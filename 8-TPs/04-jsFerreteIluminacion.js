@@ -54,17 +54,28 @@ function CalcularPrecio ()
             }
             break;
 
+            case 2:
+            case 1:
+            case 0:
+                descuento = 0;
+            break;
+
+            default:
+                alert("Por favor ingrese un número válido.");
+
         } // switch.
     } // else.
 
-    preciofinal = (35 * cantidadlamp) * descuento;
+    preciofinal = 35 * cantidadlamp;
+    preciofinal = preciofinal - (descuento * preciofinal);
+
     if(preciofinal > 120){
         importefinal = preciofinal * 0.1;
         preciofinal = preciofinal + importefinal;
-        document.getElementById("txtIdprecioDescuento").value = preciofinal + " y se pagó un impuesto de " + importefinal;
+        document.getElementById("txtIdprecioDescuento").value = "$" + preciofinal + " y se pagó un impuesto de $" + importefinal;
     }
     else{
-    document.getElementById("txtIdprecioDescuento").value = preciofinal;
+    document.getElementById("txtIdprecioDescuento").value = "$" + preciofinal;
     }
 
 } // función.
