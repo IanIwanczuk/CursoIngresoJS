@@ -57,7 +57,7 @@ function mostrar()
 		marca = prompt("Ingrese marca: ").toLowerCase();
 		while(marca.length == 0){
 			marca = prompt("ERROR. Ingrese marca: ").toLowerCase();
-		}
+		} 
 
 		fabricante = prompt("Ingrese fabricante: ").toLowerCase();
 		while(fabricante.length == 0){
@@ -101,7 +101,7 @@ function mostrar()
 	}
 
 	document.write("A) Precio alcohol barato: " + precioAlcBarato + "<br>Fabricante: " + fabAlcBarato + "<br>Cantidad: " + cantAlcBarato + "<br>");
-	document.write("<br>B) Tipo con más unidades: " + maxUnidades + "<br>Promedio: " + promedio + "<br>");
-	document.write("<br>C) Cantidad de jabones: " + contadorJ + "<br>");
+	document.write("<br>B) Tipo con más unidades: " + maxUnidades + "<br>Promedio: " + promedio.toFixed(2) + "<br>");
+	document.write("<br>C) Cantidad de jabones: " + acumJ + "<br>");
 
 }
