@@ -4,10 +4,32 @@ B.	Al ingresar una temperatura en Centígrados debemos mostrar la temperatura en
 */
 function FahrenheitCentigrados () 
 {
-	
+    let gradosF;
+    let gradosC;
+
+    gradosF = parseFloat(document.getElementById("txtIdTemperatura").value);
+    if(isNaN(gradosF)){
+        alert("Ingrese un número válido.");
+    } else {
+    gradosC = (gradosF - 32) * 5 / 9;
+    alert("A) Grados farenheit: " + gradosF +
+        "\ny en grados celcius: " + gradosC);  
+    }
+    
 }
 
 function CentigradosFahrenheit () 
 {
-	
+    let gradosC;
+    let gradosF;
+
+    gradosC = parseFloat(document.getElementById("txtIdTemperatura").value);
+    if(isNaN(gradosC)){
+        alert("Ingrese un número válido.");
+    } else {
+    gradosF = (gradosC * 9 / 5) + 32;
+    alert("A) Grados celcius: " + gradosC +
+    "\ny en grados farenheit: " + gradosF);
+    }
+
 }

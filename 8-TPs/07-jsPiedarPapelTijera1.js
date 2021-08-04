@@ -6,6 +6,9 @@ a su opción  y le informaremos si ganó, empató o perdió.
 */
 function comenzar()
 {
+    let numeroUsuario;
+
+    numeroUsuario = parseInt(prompt("Ingrese un número del 1 al 3.");
 	
 
 
@@ -13,7 +16,9 @@ function comenzar()
 
 function piedra()
 {
-	
+    let numero;
+    numero = Math.random() * 3);
+    console.log(numero);
 
 }//FIN DE LA FUNCIÓN
 
